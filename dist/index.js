@@ -888,6 +888,8 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 var plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 var vite_config_default = defineConfig({
   plugins,
+  base: "/sales-playbook-website/",
+  // <-- repo name, important for GitHub Pages
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),

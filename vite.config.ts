@@ -11,6 +11,7 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   plugins,
+  base: "/sales-playbook-website/", // <-- repo name, important for GitHub Pages
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
